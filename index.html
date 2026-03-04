@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Samar's Portfolio</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <form name="contact" netlify hidden>
+  <input type="text" name="name">
+  <input type="email" name="email">
+  <textarea name="message"></textarea>
+</form>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo">Samar.</a>
+  <ul class="nav-links">
+    <li><a href="#work">Work</a></li>
+    <!-- <li><a href="#services">Services</a></li>
+    <li><a href="#about">About</a></li> -->
+    <li><a href="#faq">FAQ</a></li>
+    <li><a href="https://cal.com/samarjal/30min?user=samarjal&overlayCalendar=true" target="_blank" class="nav-cta">Book a Call</a></li>
+    <div class="theme-switch" id="themeToggle">
+  <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="4"/><line x1="12" y1="2" x2="12" y2="5"/><line x1="12" y1="19" x2="12" y2="22"/><line x1="4.22" y1="4.22" x2="6.34" y2="6.34"/><line x1="17.66" y1="17.66" x2="19.78" y2="19.78"/><line x1="2" y1="12" x2="5" y2="12"/><line x1="19" y1="12" x2="22" y2="12"/><line x1="4.22" y1="19.78" x2="6.34" y2="17.66"/><line x1="17.66" y1="6.34" x2="19.78" y2="4.22"/></svg>
+  <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+</div>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg-glow"></div>
+  <div class="hero-avatar">
+    <img id="memoji-img" src="memoji-img.webp" alt="Samar">
+  </div>
+  <span class="hero-label">Video Editor • Motion Designer</span>
+  <h1 class="hero-title">We edit content<br><span>that builds distribution.</span></h1>
+  <p class="hero-sub">We turn your content into highly optimized retention machines that brings <strong>organic growth</strong> and <strong>engagement</strong>.</p>
+  <div class="hero-actions">
+    <a href="#work" class="btn-primary">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg>
+      See My Work
+    </a>
+    <a href="https://cal.com/samarjal/30min?user=samarjal&overlayCalendar=true" target="_blank" class="btn-secondary">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+      Book a Free Call
+    </a>
+  </div>
+  <div class="scroll-hint">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- WORK -->
+<section id="work" class="work-section">
+  <div class="container">
+    <span class="section-label fade-in" style="font-size: larger;">Selected Work</span>
+    <!-- <h2 class="section-title fade-in"></h2> -->
+    <p class="section-sub fade-in">Glimpse of my recent projects for Creators</p>
+
+    <div class="video-grid" id="videoGrid">
+      <!-- Videos injected by JS --> 
+    </div>
+  </div>
+</section>
+
+<!-- ADD VIDEO PANEL
+<div class="add-video-section">
+  <div class="container">
+    <div class="add-video-form fade-in">
+      <p class="form-title">Add a Video to Your Portfolio</p>
+      <p class="form-sub">Paste a YouTube, Google Drive, or Instagram link — it'll embed directly on the site.</p>
+      <div class="form-row">
+        <input class="form-input" id="videoTitle" placeholder="Project title">
+        <input class="form-input" id="videoTag" placeholder="Category (e.g. Brand Film)">
+      </div>
+      <div class="form-row">
+        <input class="form-input full" id="videoUrl" placeholder="YouTube, Google Drive, or Instagram URL">
+      </div>
+      <input class="form-input" style="margin-bottom:12px;" id="videoDesc" placeholder="Short description (optional)">
+      <button class="form-btn" onclick="addVideo()">Add to Portfolio</button>
+    </div>
+  </div>
+</div> -->
+
+<!-- PROOF -->
+<section id="about" class="proof-section">
+  <div class="container">
+    <!-- <span class="section-label fade-in">Social Proof</span> -->
+    <h2 class="section-title fade-in">Testimonials</h2>
+
+    <div class="stats-grid fade-in">
+      <div class="stat-item">
+        <span class="stat-num">25+</span>
+        <span class="stat-label">Projects Delivered</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num">250K+</span>
+        <span class="stat-label">Views Generated</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num">1yr</span>
+        <span class="stat-label">Experience</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num">100%</span>
+        <span class="stat-label">Client Retention</span>
+      </div>
+    </div>
+
+    <div class="testimonials-grid">
+      <div class="testimonial-card fade-in">
+        <span class="quote-mark">"</span>
+        <p class="testimonial-text">Bro you over-delivered so much. We were not expecting this level of quality. Insane work and that too on time.</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">IS</div>
+          <div>
+            <p class="author-name">Ihab Sayyed</p>
+            <p class="author-title">Co-Founder, We Smile Media</p>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card fade-in">
+        <span class="quote-mark">"</span>
+        <p class="testimonial-text">Very collaborative and easy to work with. Follows all the guidelines appropriately and delivers on time.</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">VS</div>
+          <div>
+            <p class="author-name">Vismay Shah</p>
+            <p class="author-title">Content Creator, Vismaymakes</p>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="testimonial-card fade-in">
+        <span class="quote-mark">"</span>
+        <p class="testimonial-text">Working with Samar was seamless. He understood the brief instantly, added creative flair we didn't even ask for, and nailed the vibe we were going for.</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">MN</div>
+          <div>
+            <p class="author-name">Milan N.</p>
+            <p class="author-title">YouTuber · 800K subs</p>
+          </div>
+        </div>
+      </div> -->
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="container">
+    <span class="section-label fade-in">What We Do</span>
+    <h2 class="section-title fade-in">Exact Working Framework</h2>
+    <!-- <p class="section-sub fade-in">You send the raw footage, We handle the rest.</p> -->
+
+    <div class="services-grid">
+      <div class="service-card fade-in">
+        <div class="service-icon">1</div>
+        <p class="service-name">Research</p>
+        <p class="service-desc">We search and study top creators best performing content based on your niche.</p>
+      </div>
+      <div class="service-card fade-in">
+        <div class="service-icon">2</div>
+        <p class="service-name">Extraction</p>
+        <p class="service-desc"> We capture your unique expertise and voice through strategic sessions</p>
+      </div>
+      <div class="service-card fade-in">
+        <div class="service-icon">3</div>
+        <p class="service-name">Editing</p>
+        <p class="service-desc">We edit videos in retention optimized style to maximize reach and viewer engagement.</p>
+      </div>
+      <div class="service-card fade-in">
+        <div class="service-icon">4</div>
+        <p class="service-name">Revisions</p>
+        <p class="service-desc">We provide two rounds of revisions to ensure your satisfaction.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ / OBJECTIONS -->
+<section id="faq">
+  <div class="container">
+    <!-- <span class="section-label fade-in">FAQ</span> -->
+    <h2 class="section-title fade-in" >FAQs</h2>
+    <!-- <p class="section-sub fade-in" style="text-align: center; max-width: 100%;">Here are the answers to questions We hear most often.</p> -->
+
+    <div class="faq-list fade-in">
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)" >
+          What if We don't like the final edit?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">We offer up to 2 rounds of revisions on every project to make sure the final cut is exactly what you envisioned. Your satisfaction is the goal.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          How long does a project take?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">Most projects are delivered within 3–5 business days. Larger projects like long-form podcasts or brand films may take 7–10 days. Rush delivery is available on request.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          How many revisions do you offer?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">We offer up to 2 rounds of revisions on every project. Additional revisions are available for a fee.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          What types of videos do you work on?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">We most commonly work on Talking Head Videos, Explainer and Short Form Content that build distribution for my clients.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          How do We get started?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">Book a free 15-minute discovery call using the button below. We'll talk through your project, goals, and timeline — and We'll send a proposal within 24 hours.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+ <section id="contact" class="contact-section">
+  <div class="container">
+    <div class="contact-inner fade-in">
+      <div class="contact-left">
+        <h2 class="section-title" style="text-align:left;">Get in touch</h2>
+        <p class="contact-desc">Still have any questions? Drop a message and I'll get back to you within 24 hours.</p>
+        <div class="contact-links">
+          <a href="mailto:samarxjal@gmail.com" class="contact-link">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            Email
+          </a>
+          <a href="https://instagram.com/samarxjal" target="_blank" class="contact-link">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg>
+            Instagram
+          </a>
+          <a href="https://cal.com/samarjal" target="_blank" class="contact-link">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            Book a call on Cal
+          </a>
+        </div>
+      </div>
+      <form class="contact-form"
+      name="contact"
+      method="POST"
+      action="/thank-you.html"
+      data-netlify="true"
+      data-netlify-honeypot="bot-field">
+
+  <!-- Netlify detection -->
+  <input type="hidden" name="form-name" value="contact">
+
+  <!-- email subject -->
+  <input type="hidden" name="subject"
+         value="New lead from %{siteName} (%{submissionId})">
+
+  <!-- redirect -->
+  <!-- <input type="hidden" name="redirect" value="/thank-you.html"> -->
+
+  <!-- spam protection -->
+  <p hidden>
+    <label>Don’t fill this out:
+      <input name="bot-field">
+    </label>
+  </p>
+
+  <div class="form-group">
+    <label for="c-name">Name</label>
+    <input type="text"
+           id="c-name"
+           name="name"
+           placeholder="Your name"
+           required>
+  </div>
+
+  <div class="form-group">
+    <label for="c-email">Email</label>
+    <input type="email"
+           id="c-email"
+           name="email"
+           placeholder="you@example.com"
+           required>
+  </div>
+
+  <div class="form-group">
+    <label for="c-msg">Message</label>
+    <textarea id="c-msg"
+              name="message"
+              rows="4"
+              placeholder="Tell me about your project..."
+              required></textarea>
+  </div>
+
+  <button type="submit"
+          class="btn-primary"
+          style="width:100%; justify-content:center;">
+    Send Message
+  </button>
+
+</form>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-card fade-in">
+      <h2 class="cta-title">Ready to dominate your niche?</h2>
+      <p class="cta-sub">Book a free 15-minute call. Let's chat.</p>
+      <a href="https://cal.com/samarjal" target="_blank" class="btn-primary" style="font-size:17px; padding:16px 36px; display:inline-flex;">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        Book a Free Call on Cal
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Samar · All Rights Reserved</p>
+</footer>
+
+<!-- VIDEO MODAL -->
+<div class="modal-overlay" id="videoModal" onclick="closeModal(event)">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="modal-title" id="modalTitle">Untitled</span>
+      <button class="modal-close" onclick="closeModalDirect()">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+    <div class="modal-video">
+      <iframe id="modalIframe" allowfullscreen allow="autoplay; encrypted-media; picture-in-picture" title="Video"></iframe>
+    </div>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
