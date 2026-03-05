@@ -232,10 +232,25 @@ toggle.addEventListener("click", () => {
 // }
 
 function handleContact(e) {
+  e.preventDefault();
 
   const btn = e.target.querySelector('button[type=submit]');
-
   btn.disabled = true;
   btn.textContent = 'Sending...';
 
+  const formData = new FormData(e.target);
+
+  fetch('/', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+    body: new URLSearchParams(formData).toString()
+  })
+    .then(() => {
+      window.location.href = '/thank-you.html';
+    })
+    .catch(() => {
+      btn.disabled = false;
+      btn.textContent = 'Send Message';
+      alert('Something went wrong. Please try again.');
+    });
 }
