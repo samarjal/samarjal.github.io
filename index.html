@@ -16,17 +16,24 @@
 <!-- NAV -->
 <nav>
   <a href="#" class="nav-logo">Samar.</a>
-  <ul class="nav-links">
-    <li><a href="#work">Work</a></li>
-    <!-- <li><a href="#services">Services</a></li>
-    <li><a href="#about">About</a></li> -->
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#work">Projects</a></li>
+    <li><a href="#services">Strategy</a></li>
+    <!-- <li><a href="#about">About</a></li> -->
     <li><a href="#faq">FAQ</a></li>
-    <li><a href="https://cal.com/samarjal/30min?user=samarjal&overlayCalendar=true" target="_blank" class="nav-cta">Book a Call</a></li>
-    <div class="theme-switch" id="themeToggle">
+    <li><a href="https://cal.com/samarjal/30min?user=samarjal&overlayCalendar=true">Book a Call</a></li>
+  </ul>
+
+  <!-- <div style="display:flex; align-items:center; gap:12px; margin-left:auto;">
+  <div class="theme-switch" id="themeToggle">
   <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="4"/><line x1="12" y1="2" x2="12" y2="5"/><line x1="12" y1="19" x2="12" y2="22"/><line x1="4.22" y1="4.22" x2="6.34" y2="6.34"/><line x1="17.66" y1="17.66" x2="19.78" y2="19.78"/><line x1="2" y1="12" x2="5" y2="12"/><line x1="19" y1="12" x2="22" y2="12"/><line x1="4.22" y1="19.78" x2="6.34" y2="17.66"/><line x1="17.66" y1="6.34" x2="19.78" y2="4.22"/></svg>
   <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-</div>
-  </ul>
+  </div>
+  </div> -->
+
+  <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+  <span></span><span></span><span></span>
+  </button>
 </nav>
 
 <!-- HERO -->
@@ -36,8 +43,8 @@
     <img id="memoji-img" src="memoji-img.webp" alt="Samar">
   </div>
   <span class="hero-label">Video Editor • Motion Designer</span>
-  <h1 class="hero-title">We edit content<br><span>that builds distribution.</span></h1>
-  <p class="hero-sub">We turn your content into highly optimized retention machines that brings <strong>organic growth</strong> and <strong>engagement</strong>.</p>
+  <h1 class="hero-title">I help creators<br><span>build trust through Stories.</span></h1>
+  <p class="hero-sub">I turn your content into highly optimized stories that builds <strong>audience trust</strong> and <strong>organic growth</strong>.</p>
   <div class="hero-actions">
     <a href="#work" class="btn-primary">
       <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg>
@@ -114,12 +121,12 @@
     <div class="testimonials-grid">
       <div class="testimonial-card fade-in">
         <span class="quote-mark">"</span>
-        <p class="testimonial-text">Bro you over-delivered so much. We were not expecting this level of quality. Insane work and that too on time.</p>
+        <p class="testimonial-text">Bro you over-delivered so much. I was not expecting this level of quality. Insane work and that too on time.</p>
         <div class="testimonial-author">
           <div class="author-avatar">IS</div>
           <div>
             <p class="author-name">Ihab Sayyed</p>
-            <p class="author-title">Co-Founder, We Smile Media</p>
+            <p class="author-title">Co-Founder, I Smile Media</p>
           </div>
         </div>
       </div>
@@ -136,7 +143,7 @@
       </div>
       <!-- <div class="testimonial-card fade-in">
         <span class="quote-mark">"</span>
-        <p class="testimonial-text">Working with Samar was seamless. He understood the brief instantly, added creative flair we didn't even ask for, and nailed the vibe we were going for.</p>
+        <p class="testimonial-text">Working with Samar was seamless. He understood the brief instantly, added creative flair I didn't even ask for, and nailed the vibe I were going for.</p>
         <div class="testimonial-author">
           <div class="author-avatar">MN</div>
           <div>
@@ -152,30 +159,30 @@
 <!-- SERVICES -->
 <section id="services">
   <div class="container">
-    <span class="section-label fade-in">What We Do</span>
+    <span class="section-label fade-in">What I Do</span>
     <h2 class="section-title fade-in">Exact Working Framework</h2>
-    <!-- <p class="section-sub fade-in">You send the raw footage, We handle the rest.</p> -->
+    <!-- <p class="section-sub fade-in">You send the raw footage, I handle the rest.</p> -->
 
     <div class="services-grid">
       <div class="service-card fade-in">
         <div class="service-icon">1</div>
         <p class="service-name">Research</p>
-        <p class="service-desc">We search and study top creators best performing content based on your niche.</p>
+        <p class="service-desc">I search and study top creator's best performing content based on your niche.</p>
       </div>
       <div class="service-card fade-in">
         <div class="service-icon">2</div>
         <p class="service-name">Extraction</p>
-        <p class="service-desc"> We capture your unique expertise and voice through strategic sessions</p>
+        <p class="service-desc"> I capture your unique expertise and voice through strategic sessions</p>
       </div>
       <div class="service-card fade-in">
         <div class="service-icon">3</div>
         <p class="service-name">Editing</p>
-        <p class="service-desc">We edit videos in retention optimized style to maximize reach and viewer engagement.</p>
+        <p class="service-desc">I edit videos in retention optimized style to maximize reach and viewer engagement.</p>
       </div>
       <div class="service-card fade-in">
         <div class="service-icon">4</div>
         <p class="service-name">Revisions</p>
-        <p class="service-desc">We provide two rounds of revisions to ensure your satisfaction.</p>
+        <p class="service-desc">I provide two rounds of revisions to ensure your satisfaction.</p>
       </div>
     </div>
   </div>
@@ -186,15 +193,15 @@
   <div class="container">
     <!-- <span class="section-label fade-in">FAQ</span> -->
     <h2 class="section-title fade-in" >FAQs</h2>
-    <!-- <p class="section-sub fade-in" style="text-align: center; max-width: 100%;">Here are the answers to questions We hear most often.</p> -->
+    <!-- <p class="section-sub fade-in" style="text-align: center; max-width: 100%;">Here are the answers to questions I hear most often.</p> -->
 
     <div class="faq-list fade-in">
       <div class="faq-item">
         <button class="faq-question" onclick="toggleFaq(this)" >
-          What if We don't like the final edit?
+          What if I don't like the final edit?
           <span class="faq-icon">+</span>
         </button>
-        <div class="faq-answer">We offer up to 2 rounds of revisions on every project to make sure the final cut is exactly what you envisioned. Your satisfaction is the goal.</div>
+        <div class="faq-answer">I offer up to 2 rounds of revisions on every project to make sure the final cut is exactly what you envisioned. Your satisfaction is the goal.</div>
       </div>
       <div class="faq-item">
         <button class="faq-question" onclick="toggleFaq(this)">
@@ -208,21 +215,21 @@
           How many revisions do you offer?
           <span class="faq-icon">+</span>
         </button>
-        <div class="faq-answer">We offer up to 2 rounds of revisions on every project. Additional revisions are available for a fee.</div>
+        <div class="faq-answer">I offer up to 2 rounds of revisions on every project. Additional revisions are available for a fee.</div>
       </div>
       <div class="faq-item">
         <button class="faq-question" onclick="toggleFaq(this)">
           What types of videos do you work on?
           <span class="faq-icon">+</span>
         </button>
-        <div class="faq-answer">We most commonly work on Talking Head Videos, Explainer and Short Form Content that build distribution for my clients.</div>
+        <div class="faq-answer">I most commonly work on Talking Head Videos, Explainer and Short Form Content that build distribution for my clients.</div>
       </div>
       <div class="faq-item">
         <button class="faq-question" onclick="toggleFaq(this)">
-          How do We get started?
+          How do I get started?
           <span class="faq-icon">+</span>
         </button>
-        <div class="faq-answer">Book a free 15-minute discovery call using the button below. We'll talk through your project, goals, and timeline — and We'll send a proposal within 24 hours.</div>
+        <div class="faq-answer">Book a free 15-minute discovery call using the button below. I'll talk through your project, goals, and timeline — and I'll send a proposal within 24 hours.</div>
       </div>
     </div>
   </div>
