@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=SF+Pro+Display&display=swap');
+@import url('https://api.fontshare.com/v2/css?f[]=satoshi@400,500,600,700,800,900&display=swap');
 
   :root {
     --bg: #000000;
@@ -44,9 +44,7 @@
  body {
   background: var(--bg);
   color: var(--text-primary);
-  font-family: -apple-system, BlinkMacSystemFont,
-               "SF Pro Display", "SF Pro Text",
-               "Segoe UI", system-ui, sans-serif;
+  font-family:'Satoshi', sans-serif;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
   transition: background 0.4s ease, color 0.4s ease;
@@ -1033,10 +1031,8 @@ body.light-mode .icon-moon { display: none; }
  body {
   background: var(--bg);
   color: var(--text-primary);
-  font-family: -apple-system, BlinkMacSystemFont,
-               "SF Pro Display", "SF Pro Text",
-               "Segoe UI", system-ui, sans-serif;
-  -webkit-font-smoothing: antialiased;
+  font-family: 'Satoshi', sans-serif;
+-webkit-font-smoothing: antialiased;
   overflow-x: hidden;
   transition: background 0.4s ease, color 0.4s ease;
 }
@@ -1903,6 +1899,7 @@ body.light-mode .icon-moon { display: none; }
     .form-group textarea { width: 100%; box-sizing: border-box; }
     .hero-bg-glow { width: 300px; height: 300px; }
     .hamburger { display: flex; }
+    .scroll-hint { display: none; }
 
     .nav-links {
       display: none;
@@ -1944,7 +1941,8 @@ body.light-mode .icon-moon { display: none; }
     }
 
     .hero {
-      padding: 110px 20px 80px;
+       min-height: unset;
+    padding: 80px 20px 40px;
     }
 
     .hero-title {
